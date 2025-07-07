@@ -1,0 +1,16 @@
+.blog{
+    color: blue;
+}
+li{
+    margin: 20px;
+    padding: 10px;
+    border: 10px solid tomato;
+    box-shadow: 5px 5px 10px;
+}
+h2{
+    text-align: center;
+    border: 5px solid salmon;
+}
+ul{
+    background-image: url('../IMG_1964.JPG');
+}
