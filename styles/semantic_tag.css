@@ -1,0 +1,33 @@
+figcaption{
+    text-align: center;
+    border: 2px solid black;
+    padding: 2px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px;
+    background-color: antiquewhite;
+}
+.pic{
+    border-radius: 15px;
+}
+header nav ul li{
+    list-style: none;
+    display: inline;
+    margin: 10px;
+    color: blue;
+}
+header nav ul li :hover{
+    background-color: aquamarine;
+}
+header nav ul a{
+    text-decoration: none;
+}
+footer{
+    text-align: center;
+    color: cadetblue;
+}
+.head{
+    text-align: center;
+    border: 2px solid black;
+    border-radius:5px;
+}
