@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            display: flex;
+            width: 300px;
+            height: 200px;
+            position: relative;
+        }
+        .Asif{
+            top: -150px;
+            z-index: 10;
+        }
+        .Sunset{
+            top: -330px;
+            z-index: 5;
+        }
+        .programming{
+            top: 30px;
+        }
+        .btn{
+            width: 200px;
+            height: 50px;
+            background-color: bisque;
+            border: none;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <img class="programming" src="Images/4230709.jpg" alt="">
+    <img class="Asif" src="Images/IMG_1964.JPG" alt="">
+    <img class="Sunset" src="Images/Sunset.jpg" alt="">
+    <button onclick=fun() class="btn">Click On Me</button>
+    <script>
+        function fun(){
+            alert("Hi I am Asif")
+        }
+    </script>
+</body>
+</html>
