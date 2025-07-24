@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header, .nav, .article1 , .article2, .sidebar1, .sidebar2, .footer{
+            background-color: aquamarine;
+            border-radius: 5px;
+            padding: 10px;
+            border: 2px solid tomato;
+        }
+        .header{
+            grid-area: header;
+        }
+        .nav{
+            grid-area: nav;
+        }
+        .article1{
+            grid-area: article1;
+        }
+        .article2{
+            grid-area: article2;
+        }
+        .sidebar1{
+            grid-area: sidebar1;
+        }
+        .sidebar2{
+            grid-area: sidebar2;
+        }
+        .footer{
+            grid-area: footer;
+        }
+        .container{
+            display: grid;
+            grid-template-areas: 
+            "header header   header   header"
+            "nav   article1 article2 sidebar1"
+            "nav   article1 article2 sidebar2"
+            "footer   footer  footer   footer"
+            ;
+            margin: 10px;
+            padding: 10px;
+            row-gap: 10px;
+            column-gap: 10px;
+        }
+        @media screen and (max-width:576px){
+            .container{
+                grid-template-areas: 
+                "header"
+                "nav"
+                "article1"
+                "article2"
+                "sidebar1"
+                "sidebar2"
+                "footer"
+                ;
+            }
+        }
+    </style>
+</head>
+<body class="container">
+<header class="header">
+        <h2>The Header</h2>
+    </header>
+        <nav class="nav">
+            <ul>
+                <li>nav-1</li>
+                <li>nav-2</li>
+                <li>nav-3</li>
+            </ul>
+        </nav>
+        <article class="article1">
+            <h3>The Article-1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium ipsam officiis a repellat tempore nesciunt. Similique reprehenderit cumque distinctio odit.</p>
+        </article>
+        <article class="article2">
+            <h3>The Article-2</h3>
+            <p>Quibusdam beatae ipsam tenetur similique, rerum doloremque quam at dicta voluptatum architecto! Commodi ipsum vitae numquam quod qui harum. Ipsum!</p>
+        </article>
+        <aside class="sidebar1">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, illo?</p>
+        </aside>
+        <aside class="sidebar2">
+            Advertise
+        </aside>
+    <footer class="footer">The Footer</footer>
+</body>
+</html>

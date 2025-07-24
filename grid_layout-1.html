@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .row-container{
+            display: grid;
+            grid-template-rows: repeat(3,1fr);
+            row-gap: 5px;
+        }
+        .row-2{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            column-gap: 5px;
+        }
+        .col-2{
+            display: grid;
+            grid-template-rows: repeat(2,1fr);
+            row-gap: 5px;
+        }
+        .row-3{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            column-gap: 5px;
+        }
+        .coll-2{
+            display: grid;
+            grid-template-rows: repeat(2,1fr);
+            row-gap: 5px;
+        }
+        .rowww-1,
+        .rowww-2{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            column-gap: 5px;
+        }
+        img{
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="row-container">
+        <div class="row-1 aa">
+        <img src="Images/IMG_1964.JPG" alt="">
+    </div>
+    <div class="row-2">
+        <div class="col-1 aa">
+            <img src="Images/IMG_1964.JPG" alt="">
+        </div>
+        <div class="col-2">
+            <div class="roww-1 aa">
+                <img src="Images/IMG_1964.JPG" alt="">
+            </div>
+            <div class="roww-2 aa">
+                <img src="Images/IMG_1964.JPG" alt="">    
+            </div>
+        </div>
+        <div class="col-3 aa">
+            <img src="Images/IMG_1964.JPG" alt="">
+        </div>
+    </div>
+    <div class="row-3">
+        <div class="coll-1 aa">
+            <img src="Images/IMG_1964.JPG" alt="">
+        </div>
+        <div class="coll-2">
+            <div class="rowww-1">
+                <div class="colll-1 aa">
+                    <img src="Images/IMG_1964.JPG" alt="">
+                </div>
+                <div class="colll-2 aa">
+                    <img src="Images/IMG_1964.JPG" alt="">
+                </div>
+            </div>
+            <div class="rowww-2">
+                <div class="collll-1 aa">
+                    <img src="Images/IMG_1964.JPG" alt="">
+                </div>
+                <div class="collll-2 aa">
+                    <img src="Images/IMG_1964.JPG" alt="">   
+                </div>
+            </div>
+        </div>
+        <div class="coll-3 aa">
+            <img src="Images/IMG_1964.JPG" alt="">
+        </div>
+    </div>
+    </div>
+    
+</body>
+</html>
